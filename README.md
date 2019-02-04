@@ -177,7 +177,7 @@ npm test
 [npm]:  https://github.com/npm/npm "The Node Package Manager"
 [jest]:  https://github.com/facebook/jest "Delightful JavaScript Testing"
 [license]:  LICENSE "Apache 2.0 License"
-[stringd]:  https://github.com/Miraclx/stringd "NodeJS String Variable Parser"
+[stringd]:  https://github.com/miraclx/stringd "NodeJS String Variable Parser"
 [author-url]: https://github.com/miraclx
 [ansi-styles]:  https://github.com/chalk/ansi-styles "ANSI escape codes for styling strings in the terminal"
 [stringd-result]: https://raw.githubusercontent.com/miraclx/stringd-colors/master/screenshots/colors.png "StringD Colors Example"
