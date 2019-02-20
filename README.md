@@ -47,10 +47,18 @@ const cStringd = require('stringd-colors');
 ### cStringd(template[, object]): string
 Parse the `template` with the colors in [cStringd.raw](#cStringdraw) and variables in `object` if provided
 ``` javascript
-cStringd(':{color:green}Hi There:{color:green:close}')
+const cStringd = require('stringd-colors');
+cStringd(':{color:green}Hi There:{color:close}');
+// '\u001b[32mHi There\u001b[39m'
 ```
 ### cStringd.extend([object]): object
 Return an extension of `object` with [cStringd.raw](#cStringdraw), hence appending the ansi colors to the `object`, the absence of `object` would return [cStringd.raw](#cStringdraw)
+``` javascript
+const stringd = require('stringd');
+const cStringd = require('stringd-colors');
+stringd(':{color:green}:{name}:{color:close}', cStringd.extend({name: 'Jon Bellion'}));
+// '\u001b[32mJon Bellion\u001b[39m'
+```
 ### cStringd.raw
 An object for stringd parsing of ansi styles defined [here](#styles)
 
