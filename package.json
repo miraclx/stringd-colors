@@ -1,6 +1,6 @@
 {
   "name": "stringd-colors",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ANSI colors for stringd formatting",
   "main": "index.js",
   "types": "index.d.ts",
