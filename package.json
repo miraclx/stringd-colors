@@ -1,0 +1,57 @@
+{
+  "name": "stringd-colors",
+  "version": "1.0.0",
+  "description": "ANSI colors for stringd formatting",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "test"
+  ],
+  "keywords": [
+    "ansi",
+    "colors",
+    "print",
+    "printf",
+    "string",
+    "output",
+    "parser",
+    "format",
+    "formatting"
+  ],
+  "author": "Miraculous Owonubi <omiraculous@gmail.com>",
+  "maintainers": [
+    "Miraculous Owonubi <omiraculous@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Miraclx/stringd-colors.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Miraclx/stringd-colors/issues"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "eslint": "^5.14.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "jest": "^24.1.0"
+  },
+  "dependencies": {
+    "ansi-styles": "^3.2.1",
+    "stringd": "^1.1.4"
+  },
+  "homepage": "https://github.com/Miraclx/stringd-colors#readme",
+  "directories": {
+    "test": "test"
+  }
+}
