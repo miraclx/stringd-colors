@@ -10,11 +10,6 @@
   "engines": {
     "node": ">=8"
   },
-  "files": [
-    "index.js",
-    "index.d.ts",
-    "test"
-  ],
   "keywords": [
     "ansi",
     "colors",
@@ -32,10 +27,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Miraclx/stringd-colors.git"
+    "url": "git+https://github.com/miraclx/stringd-colors.git"
   },
   "bugs": {
-    "url": "https://github.com/Miraclx/stringd-colors/issues"
+    "url": "https://github.com/miraclx/stringd-colors/issues"
   },
   "license": "Apache-2.0",
   "devDependencies": {
@@ -50,7 +45,7 @@
     "ansi-styles": "^3.2.1",
     "stringd": "^1.1.4"
   },
-  "homepage": "https://github.com/Miraclx/stringd-colors#readme",
+  "homepage": "https://github.com/miraclx/stringd-colors#readme",
   "directories": {
     "test": "test"
   }
