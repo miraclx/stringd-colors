@@ -1,3 +1,10 @@
+/**
+ * @module stringd-colors
+ * @license Apache-2.0
+ * @author Miraculous Owonubi
+ * @copyright Apache-2.0 (c) 2019 Miraculous Owonubi
+ */
+
 const stringd = require('stringd');
 const ansiStyles = require('ansi-styles');
 
