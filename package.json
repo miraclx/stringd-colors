@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "ansi-styles": "^3.2.1",
-    "stringd": "^1.1.4"
+    "stringd": "^1.1.5"
   },
   "homepage": "https://github.com/miraclx/stringd-colors#readme",
   "directories": {
