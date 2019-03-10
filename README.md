@@ -21,7 +21,7 @@ npm install stringd-colors
 
 ``` javascript
 // Node CommonJS
-var cStringd = require('stringd-colors');
+const cStringd = require('stringd-colors');
 // Or ES6
 import cStringd from 'stringd-colors';
 ```
