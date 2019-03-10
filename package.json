@@ -12,6 +12,10 @@
   "engines": {
     "node": ">=8"
   },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
   "keywords": [
     "ansi",
     "colors",
