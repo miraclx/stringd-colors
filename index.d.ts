@@ -64,4 +64,6 @@ export const raw: Colors;
 export function extend<O = {}>(object:O): O & Colors
 declare function stringdColor<O = {}>(template: string, object: O): ParsedString<O & Colors>
 
-export = stringdColor;
+declare module "stringd-colors" {
+  export = stringdColor;
+}
