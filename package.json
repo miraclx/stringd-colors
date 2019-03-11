@@ -7,7 +7,7 @@
   "scripts": {
     "test": "jest",
     "preversion": "npm test",
-    "postversion": "git push && git push --tags"
+    "postversion": "git push gitlab && git push github"
   },
   "engines": {
     "node": ">=8"
