@@ -142,6 +142,21 @@ Use `:{color:bgClose}` to close these
 
 ## Development
 
+### Building
+
+Feel free to clone, use in adherance to the [license](#license) and perhaps send pull requests
+
+``` bash
+git clone https://github.com/miraclx/stringd-colors.git
+cd stringd-colors
+npm install
+# hack on code
+npm run build
+npm test
+```
+
+### Testing
+
 Tests are executed with [Jest][jest]. To use it, simple run `npm install`, it will install
 Jest and its dependencies in your project's `node_modules` directory followed by `npm test`.
 
