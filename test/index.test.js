@@ -1,4 +1,4 @@
-const cStringd = require('../index');
+const cStringd = require('../lib');
 
 test('basic', () => {
   const result = cStringd(':{color:bgGreen}:{color:red}:{greeting}:{color:close}:{color:bgClose}', {greeting: 'Hello World'});
