@@ -21,10 +21,13 @@
     "colors",
     "print",
     "printf",
+    "sprintf",
     "string",
     "output",
     "parser",
     "format",
+    "variable",
+    "string variable",
     "formatting"
   ],
   "author": "Miraculous Owonubi <omiraculous@gmail.com>",
@@ -51,6 +54,7 @@
   "dependencies": {
     "ansi-styles": "^3.2.1",
     "stringd": "^1.3.2"
+    "stringd": "^1.4.1"
   },
   "homepage": "https://github.com/miraclx/stringd-colors#readme",
   "directories": {
