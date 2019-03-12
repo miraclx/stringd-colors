@@ -2,8 +2,8 @@
   "name": "stringd-colors",
   "version": "1.4.1",
   "description": "ANSI colors for stringd formatting",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "types": "typings/index.d.ts",
   "scripts": {
     "test": "jest",
     "preversion": "npm test",
@@ -54,6 +54,7 @@
   },
   "homepage": "https://github.com/miraclx/stringd-colors#readme",
   "directories": {
+    "lib": "lib",
     "test": "test"
   }
 }
