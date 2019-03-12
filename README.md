@@ -7,6 +7,9 @@
 - Supports [stringd][stringd] parsing functionality
 - Extends any object with styles defined [here](#styles)
 
+[![NPM Version][npm-image]][npm-url]
+[![NPM Downloads][downloads-image]][downloads-url]
+
 [![NPM][npm-image-url]][npm-url]
 
 ## Installing
@@ -179,9 +182,11 @@ npm test
 [ansi-styles]:  https://github.com/chalk/ansi-styles "ANSI escape codes for styling strings in the terminal"
 [stringd-result]: https://raw.githubusercontent.com/miraclx/stringd-colors/master/screenshots/colors.png "StringD Colors Example"
 
-[npm-url]: https://npmjs.org/package/stringd
-[npm-image]: https://badgen.net/npm/node/stringd
-[npm-image-url]: https://nodei.co/npm/stringd.png?stars&downloads
+[npm-url]: https://npmjs.org/package/stringd-colors
+[npm-image]: https://badgen.net/npm/node/stringd-colors
+[npm-image-url]: https://nodei.co/npm/stringd-colors.png?stars&downloads
+[downloads-url]: https://npmjs.org/package/stringd-colors
+[downloads-image]: https://badgen.net/npm/dm/stringd-colors
 
 [string]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type
 [object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
