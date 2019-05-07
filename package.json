@@ -77,6 +77,7 @@
   "dependencies": {
     "ansi-styles": "^3.2.1",
     "core-js": "^2.6.5",
+    "corejs": "^1.0.0",
     "stringd": "^1.4.1"
   },
   "homepage": "https://github.com/miraclx/stringd-colors#readme",
