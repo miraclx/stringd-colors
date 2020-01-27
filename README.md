@@ -41,7 +41,7 @@ import cStringd from 'stringd-colors';
 const { log } = console;
 
 log(cStringd(
-  ':{color:bgGreen}:{color:red}:{greeting}:{color:close}:{color:bgClose}',
+  ':{bgcolor(green)}:{color(red)}:{greeting}:{color:close(red)}:{bgcolor:close(green)}',
   { greeting: 'Hello World' }
 ));
 ```
@@ -61,7 +61,7 @@ log(cStringd(
 Parse the `template` with the colors in [cStringd.raw](#cstringdraw) and variables in `objects` if provided
 
 ``` javascript
-cStringd(':{color:green}Hi There:{color:close}');
+cStringd(':{color(green)}Hi There:{color:close(green)}');
 // '\u001b[32mHi There\u001b[39m'
 ```
 
@@ -75,7 +75,7 @@ Return an extension of `object` with [cStringd.raw](#cstringdraw), hence appendi
 ``` javascript
 const stringd = require('stringd');
 const cStringd = require('stringd-colors');
-stringd(':{color:green}:{name}:{color:close}', cStringd.extend({name: 'Jon Bellion'}));
+stringd(':{color(green)}:{name}:{color:close(green)}', cStringd.extend({name: 'Jon Bellion'}));
 // '\u001b[32mJon Bellion\u001b[39m'
 ```
 
@@ -83,65 +83,104 @@ stringd(':{color:green}:{name}:{color:close}', cStringd.extend({name: 'Jon Belli
 
 An object for stringd parsing of ansi styles defined [here](#styles)
 
+## Handles
+
+### `color`
+
+This handle, without a specific style specification, selects a random foreground color or modifier.
+
+``` text
+":{color}" // Random color
+":{color(red)}" // Specifically the color red
+":{color(underline)}" // Underline
+```
+
+### `color:close`
+
+This handle, without a specific style specification, defaults to closing all foreground colors
+
+``` text
+":{color:close}" // Close foreground colors
+":{color:close(yellow)}" // Close the active yellow style
+":{color:close(hidden)}" // Close the hidden modifier
+```
+
+### `bgcolor`
+
+This handle, without a specific style specification, selects a random background color or modifier.
+
+``` text
+":{bgcolor}" // Random background color
+":{bgcolor(cyan)}" // Specifically the color cyan
+":{bgcolor(bold)}" // bold
+```
+
+### `bgcolor:close`
+
+This handle, without a specific style specification, defaults to closing all background colors
+
+``` text
+":{bgcolor:close}" // Close foreground colors
+":{bgcolor:close(magenta)}" // Close the active magenta style
+":{bgcolor:close(strikethrough)}" // Close the strikethrough modifier
+```
+
+### `color:reset`
+
+This special handle, closes all ANSI manipulations.
+
 ## Styles
 
 ANSI style documentation [here][ansi-styles]
 
 ### Modifiers
 
-To close modifiers, append `:close` the key name e.g `:{color:underline:close}`
-
-- `color:reset`
-- `color:bold`
-- `color:dim`
-- `color:italic`
-- `color:underline`
-- `color:inverse`
-- `color:hidden`
-- `color:strikethrough`
-- `color:visible`
+- `color(bold)`
+- `color(dim)`
+- `color(italic)`
+- `color(underline)`
+- `color(inverse)`
+- `color(hidden)`
+- `color(strikethrough)`
+- `color(visible)`
 
 ### Colors
 
-Use `:{color:close}` to close these
-
-- `color:black`
-- `color:red`
-- `color:green`
-- `color:yellow`
-- `color:blue`
-- `color:magenta`
-- `color:cyan`
-- `color:white`
-- `color:gray`
-- `color:redBright`
-- `color:greenBright`
-- `color:yellowBright`
-- `color:blueBright`
-- `color:magentaBright`
-- `color:cyanBright`
-- `color:whiteBright`
+- `color(black)`
+- `color(red)`
+- `color(green)`
+- `color(yellow)`
+- `color(blue)`
+- `color(magenta)`
+- `color(cyan)`
+- `color(white)`
+- `color(gray)`
+- `color(redBright)`
+- `color(greenBright)`
+- `color(yellowBright)`
+- `color(blueBright)`
+- `color(magentaBright)`
+- `color(cyanBright)`
+- `color(whiteBright)`
 
 ### Background colors
 
-Use `:{color:bgClose}` to close these
-
-- `color:bgBlack`
-- `color:bgRed`
-- `color:bgGreen`
-- `color:bgYellow`
-- `color:bgBlue`
-- `color:bgMagenta`
-- `color:bgCyan`
-- `color:bgWhite`
-- `color:bgBlackBright`
-- `color:bgRedBright`
-- `color:bgGreenBright`
-- `color:bgYellowBright`
-- `color:bgBlueBright`
-- `color:bgMagentaBright`
-- `color:bgCyanBright`
-- `color:bgWhiteBright`
+- `bgcolor(black)`
+- `bgcolor(red)`
+- `bgcolor(green)`
+- `bgcolor(yellow)`
+- `bgcolor(blue)`
+- `bgcolor(magenta)`
+- `bgcolor(cyan)`
+- `bgcolor(white)`
+- `bgcolor(blackBright)`
+- `bgcolor(redBright)`
+- `bgcolor(greenBright)`
+- `bgcolor(yellowBright)`
+- `bgcolor(blueBright)`
+- `bgcolor(magentaBright)`
+- `bgcolor(cyanBright)`
+- `bgcolor(whiteBright)`
 
 ## Development
 
