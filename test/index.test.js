@@ -1,14 +1,12 @@
 const cStringd = require('../lib');
 
-test('basic', () => {
-  const result = cStringd(':{color:bgGreen}:{color:red}:{greeting}:{color:close}:{color:bgClose}', {greeting: 'Hello World'});
-  expect(result).toBe('\u001b[42m\u001b[31mHello World\u001b[39m\u001b[49m');
+test('basic test', () => {
+  const result = cStringd(
+    ':{bgcolor(black)}:{color(red)}My :{color(cyan)}name :{color(yellow)}is :{color(underline)}:{name} :{color:reset}',
+    {
+      name: 'stringd_colors',
+    },
+  );
+  console.log(`Result: ${result}`);
+  expect(result).toBe('\u001b[40m\u001b[31mMy \u001b[36mname \u001b[33mis \u001b[4mstringd_colors \u001b[0m');
 });
-
-Object.keys(cStringd.raw)
-  .filter(key => typeof cStringd.raw[key] === 'string' && !(key.includes(':close') || key.includes(':bgClose')))
-  .forEach(style => {
-    test(`testing [${style}]`, () => {
-      expect(cStringd(`:{${style}}test:{color:reset}`)).toBe(`${cStringd.raw[style]}test\x1b[0m`);
-    });
-  });
