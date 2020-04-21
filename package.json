@@ -8,8 +8,8 @@
     "test": "jest",
     "push": "git push github master && git push gitlab master",
     "build": "babel lib -d dist",
-    "preversion": "npm test",
-    "version": "npm run build",
+    "preversion": "npm run build",
+    "version": "npm test",
     "postversion": "npm run push"
   },
   "engines": {
