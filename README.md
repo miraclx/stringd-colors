@@ -93,6 +93,7 @@ This handle, without a specific style specification, selects a random foreground
 ":{color}" // Random color
 ":{color(red)}" // Specifically the color red
 ":{color(underline)}" // Underline
+":{color(green, bold)}" // Green foreground and underline
 ```
 
 ### `color:close`
@@ -113,6 +114,7 @@ This handle, without a specific style specification, selects a random background
 ":{bgcolor}" // Random background color
 ":{bgcolor(cyan)}" // Specifically the color cyan
 ":{bgcolor(bold)}" // bold
+":{bgcolor(yellow, underline)}" // Yellow background and underline
 ```
 
 ### `bgcolor:close`
@@ -120,7 +122,7 @@ This handle, without a specific style specification, selects a random background
 This handle, without a specific style specification, defaults to closing all background colors
 
 ``` text
-":{bgcolor:close}" // Close foreground colors
+":{bgcolor:close}" // Close background colors
 ":{bgcolor:close(magenta)}" // Close the active magenta style
 ":{bgcolor:close(strikethrough)}" // Close the strikethrough modifier
 ```
@@ -143,6 +145,8 @@ ANSI style documentation [here][ansi-styles]
 - `color(hidden)`
 - `color(strikethrough)`
 - `color(visible)`
+
+Modifiers are also accessible on `bgcolor:`
 
 ### Colors
 
