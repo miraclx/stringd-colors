@@ -42,7 +42,7 @@ const { log } = console;
 
 log(cStringd(
   ':{bgcolor(green)}:{color(red)}:{greeting}:{color:close(red)}:{bgcolor:close(green)}',
-  { greeting: 'Hello World' }
+  { greeting: 'Hello, World' }
 ));
 ```
 
