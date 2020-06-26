@@ -1,4 +1,4 @@
-const cStringd = require('../lib');
+const cStringd = require('../dist');
 
 test('basic test', () => {
   const result = cStringd(
