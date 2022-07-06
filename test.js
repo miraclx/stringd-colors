@@ -1,4 +1,4 @@
-const cStringd = require('../dist');
+import cStringd from './index.js';
 
 test('basic test', () => {
   const result = cStringd(

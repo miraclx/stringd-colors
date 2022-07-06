@@ -68,9 +68,8 @@ function extendStringD(object) {
   return {...colorTemplate, ...object};
 }
 
-module.exports = function stringdColors(template, object) {
+export default function stringdColors(template, object) {
   return stringd(template, extendStringD(object));
-};
+}
 
-module.exports.raw = colorTemplate;
-module.exports.extend = extendStringD;
+export {colorTemplate as raw, extendStringD as extend};

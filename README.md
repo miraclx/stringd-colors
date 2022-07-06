@@ -23,27 +23,12 @@ npm install stringd-colors
 ## Usage
 
 ``` javascript
-// Node CommonJS
-const cStringd = require('stringd-colors');
-// Or ES6
 import cStringd from 'stringd-colors';
-```
 
-``` html
-<!-- Or in the Browser -->
-<script src="index.js"></script>
-```
-
-## Example
-
-``` javascript
-// CommonJS
-const { log } = console;
-
-log(cStringd(
+cStringd(
   ':{bgcolor(green)}:{color(red)}:{greeting}:{color:close(red)}:{bgcolor:close(green)}',
   { greeting: 'Hello, World' }
-));
+);
 ```
 
 ### Result
@@ -190,14 +175,13 @@ Modifiers are also accessible on `bgcolor:`
 
 ### Building
 
-Feel free to clone, use in adherance to the [license](#license) and perhaps send pull requests
+Feel free to clone, use in adherance to the [license](#license). Pull requests are very much welcome.
 
 ``` bash
 git clone https://github.com/miraclx/stringd-colors.git
 cd stringd-colors
 npm install
 # hack on code
-npm run build
 npm test
 ```
 
