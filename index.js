@@ -59,7 +59,7 @@ const colorTemplate = Object.fromEntries(
       typeof stack === 'string'
         ? stack
         : type
-        ? type.args.reduce((colors, spec) => colors.concat(stack[spec.trim().toLowerCase()] || ''), '')
+        ? type.args.reduce((colors, spec) => colors.concat(stack[spec.trim()] || ''), '')
         : (_stack => _stack[Math.floor(Math.random() * _stack.length)])(def || Object.values(stack)),
   ]),
 );
